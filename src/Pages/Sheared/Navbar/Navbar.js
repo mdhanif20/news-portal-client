@@ -13,13 +13,14 @@ import { Link} from 'react-router-dom';
 // import useAuth from './../../Hooks/useAuth';
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import SearchIcon from '@mui/icons-material/Search';
+import useAuth from './../Firebase/useAuth';
 
 const Navbar = () => {
-    // const {users,logOut} = useAuth();
+    const {users,logOut} = useAuth();
     const logOutEmail = () =>{
       const sure = window.confirm("Are You Sure? You Want To log Out.");
       if(sure){
-        // logOut();
+        logOut();
       }
     }
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -225,16 +226,17 @@ const Navbar = () => {
                     onClick={handleCloseNavMenu}
                     style={{padding:"0",margin:"0"}}
                     sx={{ color: '#fff', display: 'block' }}>
-
-                      <Typography sx={{background:"red",padding:"11px 8px"}} textAlign="center">Login</Typography>
-                      {/* {
+                      {
                         users?.email?
-                        <Typography onClick={()=>logOutEmail()} textAlign="center">Log Out</Typography>
+                          <Typography onClick={()=>logOutEmail()} sx={{background:"red",padding:"11px 8px",fontWeight:'bolder'}} textAlign="center">LogOut</Typography>
+                       
                         :
-                     <Link style={{textDecoration:"none",color:"#fff"}} to="/login">
-                        <Typography textAlign="center">Login</Typography>
-                     </Link>
-                      } */}
+                        <Link style={{textDecoration:"none",color:"#fff"}} to="/login">
+                          <Typography sx={{background:"red",padding:"11px 8px",fontWeight:'bolder'}} textAlign="center">Login</Typography>
+                        </Link>
+                      }
+                      
+                     
                   </Button>
                       
                  

@@ -1,20 +1,25 @@
 import './App.css';
 import Home from './Pages/Home/Home/Home';
+import Login from './Pages/Login/Login';
 import {
   BrowserRouter,
   Routes,
   Route
 } from "react-router-dom";
+import AuthProvider from './Pages/Sheared/Firebase/AuthProvider';
+import Reagister from './Pages/Reagister/Reagister';
 
 
 function App() {
   return (
     <div className='App'> 
-     {/* <AuthProvider>  */}
+     <AuthProvider> 
       <BrowserRouter>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/reagister" element={<Reagister />} />
               {/* <Route path="/details/:id" element={<Details />} />  */}
               
               {/* <Route path="/deshboard/*" element={<Deshboard/>}> 
@@ -32,7 +37,7 @@ function App() {
               </Route> */}
             </Routes>
         </BrowserRouter>
-     {/* </AuthProvider> */}
+     </AuthProvider>
      
       </div>
   );

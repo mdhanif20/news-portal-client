@@ -13,9 +13,11 @@ const useFirebase = () =>{
     const [authError, setError] = useState("");
     const [token,setToken] = useState('');
     const googleProvider = new GoogleAuthProvider();
-
     const auth = getAuth();
+
+
     const singnInUser = (email,password) =>{
+      
       setIsLoading(true);
         signInWithEmailAndPassword(auth,email,password)
         .then((userCredential) => {
@@ -120,6 +122,7 @@ const useFirebase = () =>{
         logOut,
         singnInUser,
         signInWithGoogle
+        
     }
 
 }

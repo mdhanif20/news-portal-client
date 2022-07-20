@@ -74,12 +74,27 @@ const PreviousNews = ({allnews}) => {
                             />
                             <Box sx={{ display: 'flex',px:2 }}>
                             <CardContent sx={{ flex: '1 0 auto',padding:"5px",width:"100%" }}>
-                            <Typography  sx={{textAlign:"justify",fontWeight:"bolder"}}  component="div" variant="body1">
-                            {data?.heading?.slice(0,25)}...
-                            </Typography>
-                            <Typography sx={{textAlign:"justify"}} color="text.secondary" variant="body1">
-                            {data?.details?.slice(0,70)} <span style={{color:"#587DEF"}}>read more</span>...
-                            </Typography>
+                            <Typography sx={{textAlign:"justify",fontWeight:"bolder",display:{xs:"none",sm:"none",md:"block"}}} component="div" variant="body1">
+                                {data?.heading?.slice(0,30)}...
+                        </Typography>
+                        <Typography sx={{textAlign:"justify",fontWeight:"bolder",display:{xs:"none",sm:"block",md:"none"}}} component="div" variant="body1">
+                                {data?.heading?.slice(0,70)}...
+                        </Typography>
+                        <Typography sx={{textAlign:"justify",fontWeight:"bolder",display:{xs:"block",sm:"none",md:"none"}}} component="div" variant="body1">
+                                {data?.heading?.slice(0,20)}...
+                        </Typography>
+                        <Typography sx={{textAlign:"justify",fontWeight:"bolder",padding:"2px 0px",color:"#cecece"}} variant="caption" display="block" gutterBottom>
+                                {data?.time}
+                        </Typography>
+                        <Typography sx={{textAlign:"justify",display:{xs:"none",sm:"none",md:"block"}}} color="text.secondary" variant="body1">
+                            {data?.details?.slice(0,60)} <span style={{color:"#587DEF"}}>read more</span>...
+                        </Typography>
+                        <Typography sx={{textAlign:"justify",display:{xs:"none",sm:"block",md:"none"}}} color="text.secondary" variant="body1">
+                            {data?.details?.slice(0,120)} <span style={{color:"#587DEF"}}>read more</span>...
+                        </Typography>
+                        <Typography sx={{textAlign:"justify",display:{xs:"block",sm:"none",md:"none"}}} color="text.secondary" variant="body1">
+                            {data?.details?.slice(0,30)} <span style={{color:"#587DEF"}}>read more</span>...
+                        </Typography>
                             </CardContent>
                             </Box>
                         </Card>)

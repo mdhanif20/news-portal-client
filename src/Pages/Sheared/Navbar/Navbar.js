@@ -10,7 +10,6 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link} from 'react-router-dom';
-// import useAuth from './../../Hooks/useAuth';
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import SearchIcon from '@mui/icons-material/Search';
 import useAuth from './../Firebase/useAuth';
@@ -152,67 +151,73 @@ const Navbar = () => {
                   <Button
                     onClick={handleCloseNavMenu}
                     sx={{ color: '#fff', display: 'block' ,padding:"0px 8px"}}>
-                      {/* <Link style={{textDecoration:"none",color:"#fff"}} to="/home"> */}
+                      <Link style={{textDecoration:"none",color:"#fff"}} to="/bdnews">
                         <Typography textAlign="center">Bangladesh</Typography>
-                      {/* </Link> */}
+                      </Link>
                   </Button>
               
                 
                   <Button
                     onClick={handleCloseNavMenu}
                     sx={{ color: '#fff', display: 'block' ,padding:"0px 8px"}}>
-                      {/* <Link style={{textDecoration:"none",color:"#fff"}} to="/appointment"> */}
+                      <Link style={{textDecoration:"none",color:"#fff"}} to="/sports">
                          <Typography textAlign="center">Sports</Typography>
-                      {/* </Link> */}
+                      </Link>
                   </Button>
                 
                   <Button
                     onClick={handleCloseNavMenu}
                     sx={{ color: '#fff', display: 'block' ,padding:"0px 8px"}}>
-                      {/* <Link style={{textDecoration:"none",color:"#fff"}} to="/appointment"> */}
+                      <Link style={{textDecoration:"none",color:"#fff"}} to="/business">
                          <Typography textAlign="center">Business</Typography>
-                      {/* </Link> */}
+                      </Link>
                   </Button>
                 
                   <Button
                     onClick={handleCloseNavMenu}
                     sx={{ color: '#fff', display: 'block' ,padding:"0px 8px"}}>
-                      {/* <Link style={{textDecoration:"none",color:"#fff"}} to="/appointment"> */}
+                      <Link style={{textDecoration:"none",color:"#fff"}} to="/health">
                          <Typography textAlign="center">Health</Typography>
-                      {/* </Link> */}
+                      </Link>
                   </Button>
                 
                   <Button
                     onClick={handleCloseNavMenu}
                     sx={{ color: '#fff', display: 'block' ,padding:"0px 8px"}}>
-                      {/* <Link style={{textDecoration:"none",color:"#fff"}} to="/appointment"> */}
+                      <Link style={{textDecoration:"none",color:"#fff"}} to="/technology">
                          <Typography textAlign="center">Technology</Typography>
-                      {/* </Link> */}
+                      </Link>
                   </Button>
                 
                   <Button
                     onClick={handleCloseNavMenu}
                     sx={{ color: '#fff', display: 'block' ,padding:"0px 8px"}}>
-                      {/* <Link style={{textDecoration:"none",color:"#fff"}} to="/appointment"> */}
+                      <Link style={{textDecoration:"none",color:"#fff"}} to="/entartainment">
                          <Typography textAlign="center">Entertainment</Typography>
-                      {/* </Link> */}
+                      </Link>
                   </Button>
 
-                  {/* {
-                        users?.email && <Button
+                 
+
+                  
+                       {
+                        users.email === "abc@gmail.com" && <Button
                         onClick={handleCloseNavMenu}
                         sx={{ my: 2, color: '#fff', display: 'block' }}>
                           <Link style={{textDecoration:"none",color:"#fff"}} to="/deshboard">
                             <Typography textAlign="center">DeshBoard</Typography>
                           </Link>
                       </Button>
-                  } */}
+                          
+                        
+                       } 
+                  
                   <Button
                     onClick={handleCloseNavMenu}
                     sx={{  color: '#fff', display: 'block' }}>
-                      {/* <Link style={{textDecoration:"none",color:"#fff"}} to="/contact"> */}
+                      <Link style={{textDecoration:"none",color:"#fff"}} to="/contact">
                          <Typography textAlign="center">Contact Us</Typography>
-                      {/* </Link> */}
+                      </Link>
                   </Button>
                   <Button
                     onClick={handleCloseNavMenu}

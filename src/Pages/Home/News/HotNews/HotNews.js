@@ -26,10 +26,19 @@ const HotNews = ({hotNews}) => {
                 <Grid  item sm={12} md={8}>
                     <img style={{paddingRight:"20px",width:"70%"}} align="left" src={news?.img} alt="" />
                     <Box align="right"> 
-                    <Typography sx={{textAlign:"justify",fontSize:"1.2rem"}} variant="body1" gutterBottom>
-                    <Typography variant="h5" gutterBottom component="div">
+                    <Typography sx={{textAlign:"justify",fontSize:"2rem",display:{xs:"none",sm:"block"}}} variant="h5" gutterBottom component="div">
                       {news?.heading}
                     </Typography>
+                    <Typography sx={{textAlign:"justify",fontSize:"1.5rem",display:{xs:"block",sm:"none"}}} variant="h5" gutterBottom component="div">
+                      {news?.heading}
+                    </Typography>
+                    
+                    <Typography sx={{textAlign:"justify",fontWeight:"bolder",py:1}} variant="caption" display="block" gutterBottom>
+                        {news?.time}
+                    </Typography>
+                    
+                    <Typography sx={{textAlign:"justify",fontSize:"1.2rem",display:{xs:"none",sm:"block"}}} variant="body1" gutterBottom>
+                    
                     {
                     learn? <>
                         {
@@ -42,7 +51,26 @@ const HotNews = ({hotNews}) => {
                         }...
                         <Button onClick={()=>readDetails(true,news?._id)}>Read more</Button>
                         </>
-                } 
+                    } 
+                      
+                    </Typography>
+
+
+                    <Typography sx={{textAlign:"justify",fontSize:"1.2rem",display:{xs:"block",sm:"none"}}} variant="body1" gutterBottom>
+                    
+                    {
+                    learn? <>
+                        {
+                            news?.details 
+                        }
+                        <Button onClick={()=>readDetails(false,news?._id)}>Minimize</Button>
+                        </>:<>
+                        {
+                            news?.details.slice(0,150)
+                        }...
+                        <Button onClick={()=>readDetails(true,news?._id)}>Read more</Button>
+                        </>
+                    } 
                       
                     </Typography>
                     <Typography variant="subtitle1" gutterBottom component="div">

@@ -35,6 +35,9 @@ const DetailsModal = ({openBooking, news, handleBookingClose,booking,date}) => {
                     <Typography variant="h5" gutterBottom component="div">
                       {news?.heading}
                     </Typography>
+                    <Typography sx={{textAlign:"justify",fontWeight:"bolder",padding:"2px 0px",color:"#cecece"}} variant="caption" display="block" gutterBottom>
+                      {news?.time}
+                    </Typography>
                     {news?.details}   
                     </Typography>
                     <Typography variant="subtitle1" gutterBottom component="div">

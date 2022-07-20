@@ -6,7 +6,6 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { makeStyles } from '@mui/styles';
-import { ClassNames } from '@emotion/react';
 
 const useStyle = makeStyles({
     icon:{
@@ -18,7 +17,8 @@ const useStyle = makeStyles({
         cursor:"pointer",
         "&:hover":{
             color:"#fff",
-            background:"red"
+            background:"red",
+            transition:".4s"
         }
         }
 })
@@ -35,7 +35,7 @@ const Footer = () => {
               </Typography>
              
               <Typography sx={{fontWeight:"bolder",pt:1}} variant="button" display="block" gutterBottom>
-              © Copyright 2021, All rights reserved. Design by Alithemes.com
+              © Copyright 2022, All rights reserved. Design by Alithemes.com
             </Typography>
         </Box>
     );

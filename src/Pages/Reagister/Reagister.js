@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { makeStyles } from '@mui/styles';
 import Typography from '@mui/material/Typography';
@@ -13,6 +12,7 @@ import AlertTitle from '@mui/material/AlertTitle';
 import Footer from './../Sheared/Footer/Footer';
 import useAuth from './../Sheared/Firebase/useAuth';
 import Navbar from './../Sheared/Navbar/Navbar';
+import { useReducer } from 'react';
 
 
 
@@ -33,6 +33,7 @@ const useStyle = makeStyles({
     }
 })
 const Reagister = () => {
+
     const {users,authError,registerUser,isLoading,signInWithGoogle} = useAuth();
     const classes = useStyle();
     const [user,setUser] = useState({});
@@ -50,13 +51,33 @@ const Reagister = () => {
         newUser[field]=value
         setUser(newUser)
     }
+
+    const addUser = e =>{
+        fetch("http://localhost:5000/user",{
+        method:"POST",
+        headers:{
+          "content-type":"application/json"
+        },
+        body: JSON.stringify(user)
+      })
+      .then(res => res.json())
+      .then(data=>{
+        if(data.insertedId){
+            alert("Login Successfully.")
+          setInterval(() => {
+          }, 18000);
+        }
+      }) 
+    }
+
     const loginAccount = e =>{
         if(user.password !== user.password2){
             alert("Password don't match")
             return
         }
         else{
-            registerUser(user.email,user.password,user.name)
+            registerUser(user.email,user.password,user.name);
+            addUser();
             navigate("/")
         }
         

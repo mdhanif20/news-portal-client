@@ -289,41 +289,6 @@ const LeftSideBar = () => {
                     </div>
                     }
                     
-
-                   {/*  {
-                        
-                        admin && <Box>
-                        <Link className={classes.linkDesign} to="/deshboard/allAppointment">
-                        <div className={classes.itemSmall}>
-                            <PeopleIcon style={{fontSize:"25px"}}  className={classes.iconSmall}/>
-                            <Typography style={{fontWeight:400}} className={classes.textSmall}>Patients</Typography>
-                        </div>
-                        </Link>
-                        <Link className={classes.linkDesign} to="/deshboard/makeadmin">
-                            <div className={classes.itemSmall}>
-                                <ManageAccountsIcon style={{fontSize:"25px"}}  className={classes.iconSmall}/>
-                                <Typography style={{fontWeight:400}} className={classes.textSmall}>MakeAdmin</Typography>
-                            </div>
-                        </Link>
-                        </Box>
-                       } */}
-                          
-                
-                   {/*  {
-                        users?.email?
-                        <div onClick={()=>logOutEmail()} className={classes.itemSmall}>
-                            <Logout style={{fontSize:"25px"}}  className={classes.iconSmall}/>
-                            <Typography style={{fontWeight:400}}  className={classes.textSmall}>Log Out</Typography>
-                        </div>
-                        :
-                        <Link style={{textDecoration:"none",color:"#fff"}} to="/login">
-                            <div className={classes.itemSmall}>
-                                <Logout style={{fontSize:"25px"}}  className={classes.iconSmall}/>
-                                <Typography style={{fontWeight:400}}  className={classes.textSmall}>Log In</Typography>
-                            </div>
-                        </Link>
-                      } */}
-                    
                 </Container>
             </Box>
             <Outlet/>

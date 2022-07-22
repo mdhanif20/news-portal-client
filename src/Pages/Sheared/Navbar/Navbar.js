@@ -146,6 +146,20 @@ const Navbar = () => {
                     </MenuItem>
                     }
 
+                    {
+                      users.email?<MenuItem  onClick={handleCloseNavMenu}>
+                      <Link onClick={()=>logOutEmail()} style={{textDecoration:"none",color:"#0F0C0B"}} to="/logout">
+                       <Typography textAlign="center">Logout</Typography>
+                     </Link>
+                   </MenuItem> 
+                   :
+                   <MenuItem  onClick={handleCloseNavMenu}>
+                       <Link style={{textDecoration:"none",color:"#0F0C0B"}} to="/login">
+                        <Typography textAlign="center">Login</Typography>
+                      </Link>
+                    </MenuItem> 
+                    }
+
                 </Menu>
               </Box>
 

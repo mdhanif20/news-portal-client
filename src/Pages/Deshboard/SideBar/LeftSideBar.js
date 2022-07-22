@@ -235,55 +235,57 @@ const LeftSideBar = () => {
 
            <Box sx={{display:{xs:"block",sm:"block",md:"none"},zIndex:1}}>
            <Container style={{paddingLeft:"8px",paddingRight:"31px"}} sx={{ bgcolor:"#0f0c0b",width:"34px"}} className={classes.containerSmall}>
-                    {/* <Link className={classes.linkDesign} to="/deshboard">  */}
+                    <Link className={classes.linkDesign} to="/deshboard">  
                         <div className={classes.itemSmall}>
                             <FlagIcon style={{fontSize:"25px"}} className={classes.iconSmall}/>
                             <Typography style={{fontWeight:400}} className={classes.textSmall}>Bangladesh</Typography>
                         </div>
-                    {/* </Link> */}
+                    </Link>
                     
-                    {/* <Link className={classes.linkDesign} to="/deshboard">  */}
+                    <Link className={classes.linkDesign} to="/deshboard/sport"> 
                         <div className={classes.itemSmall}>
                             <SportsGymnasticsIcon style={{fontSize:"25px"}} className={classes.iconSmall}/>
                             <Typography style={{fontWeight:400}} className={classes.textSmall}>Sport</Typography>
                         </div>
-                    {/* </Link> */}
+                    </Link>
                     
-                    {/* <Link className={classes.linkDesign} to="/deshboard">  */}
+                    <Link className={classes.linkDesign} to="/deshboard/business"> 
                         <div className={classes.itemSmall}>
                             <BusinessCenterIcon style={{fontSize:"25px"}} className={classes.iconSmall}/>
                             <Typography style={{fontWeight:400}} className={classes.textSmall}>Business</Typography>
                         </div>
-                    {/* </Link> */}
+                    </Link>
                     
-                    {/* <Link className={classes.linkDesign} to="/deshboard">  */}
+                    <Link className={classes.linkDesign} to="/deshboard/health">  
                         <div className={classes.itemSmall}>
                             <LocalHospitalIcon style={{fontSize:"25px"}} className={classes.iconSmall}/>
                             <Typography style={{fontWeight:400}} className={classes.textSmall}>Health</Typography>
                         </div>
-                    {/* </Link> */}
+                    </Link>
                     
-                    {/* <Link className={classes.linkDesign} to="/deshboard">  */}
+                    <Link className={classes.linkDesign} to="/deshboard/technology"> 
                         <div className={classes.itemSmall}>
                             <BiotechIcon style={{fontSize:"25px"}} className={classes.iconSmall}/>
                             <Typography style={{fontWeight:400}} className={classes.textSmall}>Technology</Typography>
                         </div>
-                    {/* </Link> */}
+                    </Link>
                     
-                    {/* <Link className={classes.linkDesign} to="/deshboard">  */}
+                    <Link className={classes.linkDesign} to="/deshboard/entertainment"> 
                         <div className={classes.itemSmall}>
                             <SlideshowIcon style={{fontSize:"25px"}} className={classes.iconSmall}/>
                             <Typography style={{fontWeight:400}} className={classes.textSmall}>Entartainment</Typography>
                         </div>
-                    {/* </Link> */}
+                    </Link>
                     
                     {
-                        users.email?<div className={classes.itemSmall}>
+                        users.email?<div onClick={()=>logOutEmail()} className={classes.itemSmall}>
                         <LogoutIcon style={{fontSize:"25px"}} className={classes.iconSmall}/>
                         <Typography style={{fontWeight:400}} className={classes.textSmall}>LogOut</Typography>
                     </div>:<div className={classes.itemSmall}>
-                        <LoginIcon style={{fontSize:"25px"}} className={classes.iconSmall}/>
-                        <Typography style={{fontWeight:400}} className={classes.textSmall}>LogOut</Typography>
+                        <Link className={classes.linkDesign} to="/login">
+                            <LoginIcon style={{fontSize:"25px"}} className={classes.iconSmall}/>
+                            <Typography style={{fontWeight:400}} className={classes.textSmall}>Login</Typography>
+                        </Link>
                     </div>
                     }
                     

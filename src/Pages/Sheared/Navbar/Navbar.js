@@ -95,42 +95,56 @@ const Navbar = () => {
                 >
                   
                     <MenuItem  onClick={handleCloseNavMenu}>
-                       {/* <Link style={{textDecoration:"none",color:"#0F0C0B"}} to="/home"> */}
+                       <Link style={{textDecoration:"none",color:"#0F0C0B"}} to="/home">
                         <Typography textAlign="center">Home</Typography>
-                      {/* </Link> */}
+                      </Link>
                     </MenuItem>
-
+                  
                     <MenuItem  onClick={handleCloseNavMenu}>
-                      {/* <Link style={{textDecoration:"none",color:"#0F0C0B"}} to="/appointment"> */}
-                         <Typography textAlign="center">Appointment</Typography>
-                      {/* </Link> */}
+                       <Link style={{textDecoration:"none",color:"#0F0C0B"}} to="/bdnews">
+                        <Typography textAlign="center">Bangladesh</Typography>
+                      </Link>
                     </MenuItem>
+                  
+                    <MenuItem  onClick={handleCloseNavMenu}>
+                       <Link style={{textDecoration:"none",color:"#0F0C0B"}} to="/sports">
+                        <Typography textAlign="center">Sports</Typography>
+                      </Link>
+                    </MenuItem>
+                  
+                    <MenuItem  onClick={handleCloseNavMenu}>
+                       <Link style={{textDecoration:"none",color:"#0F0C0B"}} to="/business">
+                        <Typography textAlign="center">Business</Typography>
+                      </Link>
+                    </MenuItem>
+                  
+                    <MenuItem  onClick={handleCloseNavMenu}>
+                       <Link style={{textDecoration:"none",color:"#0F0C0B"}} to="/health">
+                        <Typography textAlign="center">Health</Typography>
+                      </Link>
+                    </MenuItem>
+                  
+                    <MenuItem  onClick={handleCloseNavMenu}>
+                       <Link style={{textDecoration:"none",color:"#0F0C0B"}} to="/technology">
+                        <Typography textAlign="center">Technology</Typography>
+                      </Link>
+                    </MenuItem>
+                  
+                    <MenuItem  onClick={handleCloseNavMenu}>
+                       <Link style={{textDecoration:"none",color:"#0F0C0B"}} to="/entartainment">
+                        <Typography textAlign="center">Entartainment</Typography>
+                      </Link>
+                    </MenuItem>
+                   
 
-                   {/*  {
-                    users?.email && 
+                   {
+                    users.email === "abc@gmail.com" &&
                     <MenuItem  onClick={handleCloseNavMenu}>
                           <Link style={{textDecoration:"none",color:"#0F0C0B"}} to="/deshboard">
-                            <Typography style={{color:"#0F0C0B"}} textAlign="center">Desh Board</Typography>
+                            <Typography style={{color:"#0F0C0B"}} textAlign="center">DeshBoard</Typography>
                           </Link>
                     </MenuItem>
-                    } */}
-
-                    <MenuItem  onClick={handleCloseNavMenu}>
-                      {/* <Link style={{textDecoration:"none",color:"#0F0C0B"}} to="/contact"> */}
-                         <Typography textAlign="center">Contact Us</Typography>
-                      {/* </Link> */}
-                    </MenuItem>
-
-                    <MenuItem  onClick={handleCloseNavMenu}>
-                   {/*  {
-                        users?.email?
-                        <Typography onClick={()=>logOutEmail()} textAlign="center">Log Out</Typography>
-                        :
-                     <Link style={{textDecoration:"none",color:"#0F0C0B"}} to="/login">
-                        <Typography textAlign="center">Login</Typography>
-                     </Link>
-                      } */}
-                    </MenuItem>
+                    }
 
                 </Menu>
               </Box>
@@ -208,8 +222,6 @@ const Navbar = () => {
                             <Typography textAlign="center">DeshBoard</Typography>
                           </Link>
                       </Button>
-                          
-                        
                        } 
                   
                   <Button

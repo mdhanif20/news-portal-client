@@ -31,7 +31,7 @@ const UpdateNewsModal = ({openUpdateNewsModal,closeUpdateModal,id,news,type}) =>
   }
 
     const updatenewsData = id =>{
-            const url = `http://localhost:5000/news/${id}`;
+            const url = `https://gentle-dawn-20200.herokuapp.com/news/${id}`;
             fetch(url,{
                 method:"PUT",
                 headers:{

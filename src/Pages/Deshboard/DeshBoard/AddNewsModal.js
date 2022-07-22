@@ -2,7 +2,6 @@ import React,{useState} from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import TextareaAutosize from '@mui/material/TextareaAutosize';
 
@@ -27,7 +26,7 @@ const AddNewsModal = ({openBooking,handleBookingClose,type}) => {
   
    
     const addNews = e =>{
-        fetch("http://localhost:5000/news",{
+        fetch("https://gentle-dawn-20200.herokuapp.com/news",{
         method:"POST",
         headers:{
           "content-type":"application/json"

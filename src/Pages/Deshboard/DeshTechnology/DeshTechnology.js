@@ -36,7 +36,7 @@ const DeshTechnology = () => {
 
     //load theme
     useEffect(()=>{
-        fetch("http://localhost:5000/news/technology")
+        fetch("https://gentle-dawn-20200.herokuapp.com/news/technology")
         .then(res=> res.json())
         .then(data => setAllNews(data))
     },[openBooking,openUpdate])
@@ -46,7 +46,7 @@ const DeshTechnology = () => {
   const deletenewsa = id =>{
         const proceed = window.confirm("Are you sure, you want to delete?")
         if(proceed){
-            const url = `http://localhost:5000/news/${id}`;
+            const url = `https://gentle-dawn-20200.herokuapp.com/news/${id}`;
             fetch(url,{
                 method:"DELETE"
             })

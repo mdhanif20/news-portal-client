@@ -10,7 +10,6 @@ import Paper from '@mui/material/Paper';
 import { Scrollbars } from 'react-custom-scrollbars';
 import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
-import { Link } from 'react-router-dom';
 import AddIcon from '@mui/icons-material/Add';
 import UpdateNewsModal from './../DeshBoard/UpdateNewsModal';
 import AddNewsModal from './../DeshBoard/AddNewsModal';
@@ -37,7 +36,7 @@ const DeshEntertainment = () => {
 
     //load theme
     useEffect(()=>{
-        fetch("http://localhost:5000/news/entertainment")
+        fetch("https://gentle-dawn-20200.herokuapp.com/news/entertainment")
         .then(res=> res.json())
         .then(data => setAllNews(data))
     },[openBooking,openUpdate])
@@ -47,7 +46,7 @@ const DeshEntertainment = () => {
   const deletenewsa = id =>{
         const proceed = window.confirm("Are you sure, you want to delete?")
         if(proceed){
-            const url = `http://localhost:5000/news/${id}`;
+            const url = `https://gentle-dawn-20200.herokuapp.com/news/${id}`;
             fetch(url,{
                 method:"DELETE"
             })

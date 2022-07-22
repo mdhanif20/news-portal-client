@@ -51,19 +51,7 @@ function App() {
                 <Route path="technology" element={<DeshTechnology/>}/>
                 <Route path="entertainment" element={<DeshEntertainment/>}/>
               </Route>              
-              {/*<Route path="/deshboard/*" element={<Deshboard/>}> 
-                <Route path="patients" element={<Patients/>}/>  
-                <Route path="*" element={<ClientInfo/>}/>
-                  <Route path="*" element={<AdminRoute/>}> 
-                    <Route path="allAppointment" element={<AllAppointment/>}/>
-                    <Route path="makeadmin" element={<MakeAdmin/>}/>
-                  </Route>
-              </Route>
-              <Route path="/reagister" element={<Reagister/>} />
-              <Route path="/*" element={<PrivateRoute/>}>
-                  <Route path="appointment" element={<Appointment/>}/>
-                  <Route path="contact" element={<ContactUs/>} />
-              </Route> */}
+              
             </Routes>
         </BrowserRouter>
      </AuthProvider>

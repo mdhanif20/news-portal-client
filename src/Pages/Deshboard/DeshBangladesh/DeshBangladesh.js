@@ -35,7 +35,7 @@ const DeshBangladesh = () => {
 
     //load theme
     useEffect(()=>{
-        fetch("http://localhost:5000/news/bangladesh")
+        fetch("https://gentle-dawn-20200.herokuapp.com/news/bangladesh")
         .then(res=> res.json())
         .then(data => setAllNews(data))
     },[openBooking,openUpdate])
@@ -45,7 +45,7 @@ const DeshBangladesh = () => {
   const deletenewsa = id =>{
         const proceed = window.confirm("Are you sure, you want to delete?")
         if(proceed){
-            const url = `http://localhost:5000/news/${id}`;
+            const url = `https://gentle-dawn-20200.herokuapp.com/news/${id}`;
             fetch(url,{
                 method:"DELETE"
             })

@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import Navbar from './../Sheared/Navbar/Navbar';
 import Footer from './../Sheared/Footer/Footer';
 import DetailsModal from './../Home/News/ReadDetails/DetailsModal';
-import addImg from "../../images/nooduls.jpg";
+import addImg from "../../images/add3.jpg";
 
 
 const Business = () => {
@@ -23,7 +23,7 @@ const Business = () => {
         handleBookingOpen()
     } 
     useEffect(()=>{
-        fetch("http://localhost:5000/news/business")
+        fetch("https://gentle-dawn-20200.herokuapp.com/news/business")
         .then(res =>res.json())
         .then(data => setNews(data))
     },[])
@@ -76,9 +76,9 @@ const Business = () => {
                 <Grid item xs={12} sm={12} md={4}>
             <Box sx={{pl:{xs:0,sm:0}}}>
                 <Typography sx={{py:1}} variant="h2" gutterBottom component="div">
-                {/* ?autoplay=1&mute=1  */}
                 
-                <iframe width="100%" height="250px" src="https://www.youtube.com/embed/WQlISC-N5Xw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                
+                <iframe width="100%" height="250px" src="https://www.youtube.com/embed/_ysd-zHamjk?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </Typography> 
                <img style={{paddingRight:"20px",width:"95%",margin:"auto"}}  src={addImg} alt="" />
                 <Box > 

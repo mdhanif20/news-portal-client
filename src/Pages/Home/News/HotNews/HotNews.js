@@ -84,9 +84,9 @@ const HotNews = ({hotNews}) => {
                 <Grid   item sm={12} md={4}>
                 <Box sx={{pl:{xs:0,sm:4}}}>
                 <Typography sx={{py:5}} variant="h2" gutterBottom component="div">
-                {/* ?autoplay=1&mute=1  */}
-                 <iframe width="100%" height="250px" src="https://www.youtube.com/embed/nqye02H_H6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="100%" height="250px" src="https://www.youtube.com/embed/WQlISC-N5Xw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                
+                 <iframe width="100%" height="250px" src="https://www.youtube.com/embed/nqye02H_H6I?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="250px" src="https://www.youtube.com/embed/WQlISC-N5Xw?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
                 </Typography> 
                <img style={{paddingRight:"20px",width:"95%",margin:"auto"}}  src={addImg} alt="" />
                     <Box > 

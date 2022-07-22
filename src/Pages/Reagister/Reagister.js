@@ -12,8 +12,6 @@ import AlertTitle from '@mui/material/AlertTitle';
 import Footer from './../Sheared/Footer/Footer';
 import useAuth from './../Sheared/Firebase/useAuth';
 import Navbar from './../Sheared/Navbar/Navbar';
-import { useReducer } from 'react';
-
 
 
 const useStyle = makeStyles({
@@ -53,7 +51,7 @@ const Reagister = () => {
     }
 
     const addUser = e =>{
-        fetch("http://localhost:5000/user",{
+        fetch("https://gentle-dawn-20200.herokuapp.com/user",{
         method:"POST",
         headers:{
           "content-type":"application/json"

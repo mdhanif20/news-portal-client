@@ -1,6 +1,3 @@
-import { Logout, Settings} from '@mui/icons-material';
-import AppsIcon from '@mui/icons-material/Apps';
-import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
 import { Container } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import { makeStyles } from '@mui/styles';
@@ -8,11 +5,7 @@ import Box from '@mui/material/Box';
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import Button from '@mui/material/Button';
-import WebAssetIcon from '@mui/icons-material/WebAsset';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
-import StorageIcon from '@mui/icons-material/Storage';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-
 import FlagIcon from '@mui/icons-material/Flag';
 import SportsGymnasticsIcon from '@mui/icons-material/SportsGymnastics';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
@@ -94,7 +87,7 @@ const useStyle = makeStyles({
 
 const LeftSideBar = () => {
     const classes = useStyle();
-    const {admin,logOut,users} = useAuth();
+    const {logOut,users} = useAuth();
     const logOutEmail = () =>{
         const sure = window.confirm("Are You Sure? You Want To log Out.");
         if(sure){
@@ -191,62 +184,6 @@ const LeftSideBar = () => {
                         </Button>
                     </Link>
 
-                     
-                   
-
-                  {/*  {
-                        
-                    admin && <Box>
-                    <Link className={classes.linkDesign} to="/deshboard/editTheme">
-                        <Button style={{
-        display:"flex",
-        justifyContent:"flex-start",
-marginBottom:'10px',
-        
-        cursor:"pointer",
-        color:"#fff",
-        width:"100%"
-    }}>
-                            <Settings style={{fontSize:"25px"}}  className={classes.icon}/>
-                            <Typography style={{fontWeight:500}}className={classes.text}>Update Info</Typography>
-                        </Button>
-                    </Link>
-                    <Link className={classes.linkDesign} to="/deshboard/makeadmin">
-                            <Button style={{
-        display:"flex",
-        justifyContent:"flex-start",
-marginBottom:'10px',
-        
-        cursor:"pointer",
-        color:"#fff",
-        width:"100%"
-    }}>
-                                <ManageAccountsIcon style={{fontSize:"25px"}}  className={classes.icon}/>
-                                <Typography style={{fontWeight:500}}className={classes.text}>Make Admin</Typography>
-                            </Button>
-                        </Link>
-                        <Link className={classes.linkDesign} to="/deshboard/allPurchasedTheme">
-                        <Button style={{
-        display:"flex",
-        justifyContent:"flex-start",
-marginBottom:'10px',
-        
-        cursor:"pointer",
-        color:"#fff",
-        width:"100%"
-    }}>
-                            <ShoppingCartIcon style={{fontSize:"25px"}} className={classes.icon}/>
-                                <Typography style={{fontWeight:500}} className={classes.text}>Purchased</Typography>
-                        </Button>
-                    </Link>
-                        </Box>
-                   
-
-                   }
- */}
-                    
-                   
-
                       <Link className={classes.linkDesign} to="/contact">
                         <Button style={{
                             display:"flex",
@@ -289,46 +226,6 @@ marginBottom:'10px',
                     </Link>
                     
                    }
-
-                      {/* <Link className={classes.linkDesign} to="/contact"> */}
-                        
-                    {/* </Link> */}
-
-                      {/* <Link className={classes.linkDesign} to="/contact"> */}
-                       
-                    {/* </Link> */}
-                    
-
-                   {/*  {
-                        users?.email?
-                        <Button onClick={()=>logOutEmail()} style={{
-        display:"flex",
-        justifyContent:"flex-start",
-marginBottom:'10px',
-        
-        cursor:"pointer",
-        color:"#fff",
-        width:"100%"
-    }}>
-                            <Logout style={{fontSize:"25px"}}  className={classes.icon}/>
-                            <Typography style={{fontWeight:500}}className={classes.text}>Log Out</Typography>
-                        </Button>
-                        :
-                        <Link style={{textDecoration:"none",color:"#fff"}} to="/login">
-                        <Button style={{
-        display:"flex",
-        justifyContent:"flex-start",
-marginBottom:'10px',
-        
-        cursor:"pointer",
-        color:"#fff",
-        width:"100%"
-    }}>
-                            <Logout style={{fontSize:"25px"}}  className={classes.icon}/>
-                            <Typography style={{fontWeight:500}}className={classes.text}>Log In</Typography>
-                        </Button>
-                        </Link>
-                      } */}
                     
                 </Container>
             </Box>

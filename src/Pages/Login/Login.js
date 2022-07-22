@@ -1,17 +1,14 @@
 import React, { useState } from 'react';
 import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { makeStyles } from '@mui/styles';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { Link, useNavigate } from 'react-router-dom';
-import GoogleIcon from '@mui/icons-material/Google';
 import Navbar from './../Sheared/Navbar/Navbar';
 import Footer from './../Sheared/Footer/Footer';
 import useAuth from './../Sheared/Firebase/useAuth';
-import useFirebase from './../Sheared/Firebase/useFirebase';
 
 
 const useStyle = makeStyles({
@@ -33,7 +30,7 @@ const useStyle = makeStyles({
 
 
 const Login = () => {
-    const {users,singnInUser,isLoading,signInWithGoogle} = useAuth();
+    const {singnInUser,isLoading,signInWithGoogle} = useAuth();
     const classes = useStyle();
     const [user,setUser] = useState({});
     const navigate = useNavigate();

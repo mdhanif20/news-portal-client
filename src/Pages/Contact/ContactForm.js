@@ -29,7 +29,7 @@ const useStyle = makeStyles({
         padding: "7px 20px 7px 10px",
         border: "0",
         borderRadius: "25px",
-        backgroundColor: "black",
+        backgroundColor: "red",
         color: "#fff",
         cursor:"pointer",
         fontWeight:" 500",
@@ -59,7 +59,7 @@ const ContactForm = () => {
                     <input type="email" name="user_email" className={classes.input} placeholder="Enter your email" /> <br />
                     <input type="text" name="user_name" className={classes.input} placeholder='Subject' /> <br />
                     <textarea name="message" className={classes.textArea} id="" placeholder='Your Message'></textarea> <br />
-                    <Button sx={{backgroundColor: "black","&:hover":{backgroundColor: "black"}}}  className={classes.button} variant="contained">
+                    <Button sx={{backgroundColor: "red","&:hover":{backgroundColor: "red"}}}  className={classes.button} variant="contained">
                     <SendIcon sx={{pl:1}}/>
                     <input className={classes.submitButton} type="submit" value="Send"/>
                     </Button>

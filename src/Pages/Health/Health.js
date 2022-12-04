@@ -23,7 +23,7 @@ const Health = () => {
         handleBookingOpen()
     } 
     useEffect(()=>{
-        fetch("https://gentle-dawn-20200.herokuapp.com/news/health")
+        fetch("https://news-portal-server-9tplvhxr1-mdhanif20.vercel.app/news/health")
         .then(res =>res.json())
         .then(data => setNews(data))
     },[])

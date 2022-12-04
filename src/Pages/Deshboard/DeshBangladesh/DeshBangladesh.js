@@ -35,7 +35,7 @@ const DeshBangladesh = () => {
 
     //load theme
     useEffect(()=>{
-        fetch("https://gentle-dawn-20200.herokuapp.com/news/bangladesh")
+        fetch("https://news-portal-server-9tplvhxr1-mdhanif20.vercel.app/news/bangladesh")
         .then(res=> res.json())
         .then(data => setAllNews(data))
     },[openBooking,openUpdate])
@@ -45,7 +45,7 @@ const DeshBangladesh = () => {
   const deletenewsa = id =>{
         const proceed = window.confirm("Are you sure, you want to delete?")
         if(proceed){
-            const url = `https://gentle-dawn-20200.herokuapp.com/news/${id}`;
+            const url = `https://news-portal-server-9tplvhxr1-mdhanif20.vercel.app/news/${id}`;
             fetch(url,{
                 method:"DELETE"
             })

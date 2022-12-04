@@ -23,7 +23,7 @@ const Technology = () => {
         handleBookingOpen()
     } 
     useEffect(()=>{
-        fetch("https://gentle-dawn-20200.herokuapp.com/news/technology")
+        fetch("https://news-portal-server-9tplvhxr1-mdhanif20.vercel.app/news/technology")
         .then(res =>res.json())
         .then(data => setNews(data))
     },[])

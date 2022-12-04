@@ -20,13 +20,12 @@ const AddNewsModal = ({openBooking,handleBookingClose,type}) => {
       const value = e.target.value;
       const newInfo = {...domain};
       newInfo[field] = value
-      
       setDomain(newInfo);
   }
   
    
     const addNews = e =>{
-        fetch("https://gentle-dawn-20200.herokuapp.com/news",{
+        fetch("https://news-portal-server-9tplvhxr1-mdhanif20.vercel.app/news",{
         method:"POST",
         headers:{
           "content-type":"application/json"

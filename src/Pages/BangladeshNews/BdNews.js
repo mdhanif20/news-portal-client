@@ -23,7 +23,7 @@ const BdNews = () => {
         handleBookingOpen()
     } 
     useEffect(()=>{
-        fetch("https://gentle-dawn-20200.herokuapp.com/news/business")
+        fetch("https://news-portal-server-9tplvhxr1-mdhanif20.vercel.app/news/business")
         .then(res =>res.json())
         .then(data => setNews(data))
     },[])

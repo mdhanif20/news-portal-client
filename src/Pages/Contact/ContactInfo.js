@@ -11,7 +11,7 @@ import ContactFormHeader from './ContactFormHeader';
 
 const useStyle = makeStyles({
     contactArea:{
-        backgroundColor:"#FF0000"
+        backgroundColor:"#000000"
     },
     contactAreaSmall:{
         backgroundColor:'#FF0000',
@@ -21,7 +21,7 @@ const useStyle = makeStyles({
         textAlign:"start"
     },
     icon:{
-        color:"black",
+        color:"red",
         padding:"3px",
         border:"1px solid",
         borderRadius:'20%',

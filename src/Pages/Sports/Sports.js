@@ -23,7 +23,7 @@ const Sports = () => {
         handleBookingOpen()
     } 
     useEffect(()=>{
-        fetch("https://news-portal-server-9tplvhxr1-mdhanif20.vercel.app/news/sport")
+        fetch("https://news-portal-server-pi-three.vercel.app/news/sport")
         .then(res =>res.json())
         .then(data => setNews(data))
     },[])

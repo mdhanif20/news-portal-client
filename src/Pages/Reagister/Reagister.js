@@ -51,7 +51,7 @@ const Reagister = () => {
     }
 
     const addUser = e =>{
-        fetch("https://news-portal-server-9tplvhxr1-mdhanif20.vercel.app/user",{
+        fetch("https://news-portal-server-pi-three.vercel.app/user",{
         method:"POST",
         headers:{
           "content-type":"application/json"

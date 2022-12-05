@@ -36,7 +36,7 @@ const DeshEntertainment = () => {
 
     //load theme
     useEffect(()=>{
-        fetch("https://news-portal-server-9tplvhxr1-mdhanif20.vercel.app/news/entertainment")
+        fetch("https://news-portal-server-pi-three.vercel.app/news/entertainment")
         .then(res=> res.json())
         .then(data => setAllNews(data))
     },[openBooking,openUpdate])
@@ -46,7 +46,7 @@ const DeshEntertainment = () => {
   const deletenewsa = id =>{
         const proceed = window.confirm("Are you sure, you want to delete?")
         if(proceed){
-            const url = `https://news-portal-server-9tplvhxr1-mdhanif20.vercel.app/news/${id}`;
+            const url = `https://news-portal-server-pi-three.vercel.app/news/${id}`;
             fetch(url,{
                 method:"DELETE"
             })

@@ -23,7 +23,7 @@ const Health = () => {
         handleBookingOpen()
     } 
     useEffect(()=>{
-        fetch("https://news-portal-server-pi-three.vercel.app/news/health")
+        fetch("https://news-portal-server.onrender.com/news/health")
         .then(res =>res.json())
         .then(data => setNews(data))
     },[])

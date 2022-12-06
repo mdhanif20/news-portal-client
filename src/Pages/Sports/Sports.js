@@ -23,7 +23,7 @@ const Sports = () => {
         handleBookingOpen()
     } 
     useEffect(()=>{
-        fetch("https://news-portal-server-pi-three.vercel.app/news/sport")
+        fetch("https://news-portal-server.onrender.com/news/sport")
         .then(res =>res.json())
         .then(data => setNews(data))
     },[])

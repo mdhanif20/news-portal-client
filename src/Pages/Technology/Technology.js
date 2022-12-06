@@ -23,7 +23,7 @@ const Technology = () => {
         handleBookingOpen()
     } 
     useEffect(()=>{
-        fetch("https://news-portal-server-pi-three.vercel.app/news/technology")
+        fetch("https://news-portal-server.onrender.com/news/technology")
         .then(res =>res.json())
         .then(data => setNews(data))
     },[])

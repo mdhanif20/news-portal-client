@@ -31,7 +31,7 @@ const UpdateNewsModal = ({openUpdateNewsModal,closeUpdateModal,id,news,type}) =>
   }
 
     const updatenewsData = id =>{
-            const url = `https://news-portal-server-pi-three.vercel.app/news/${id}`;
+            const url = `https://news-portal-server.onrender.com/news/${id}`;
             fetch(url,{
                 method:"PUT",
                 headers:{

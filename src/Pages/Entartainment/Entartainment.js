@@ -23,7 +23,7 @@ const Entartainment = () => {
         handleBookingOpen()
     } 
     useEffect(()=>{
-        fetch("https://news-portal-server-pi-three.vercel.app/news/entartainment")
+        fetch("https://news-portal-server.onrender.com/news/entartainment")
         .then(res =>res.json())
         .then(data => setNews(data))
     },[])

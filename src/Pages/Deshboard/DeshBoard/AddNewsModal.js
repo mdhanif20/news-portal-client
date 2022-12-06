@@ -25,7 +25,7 @@ const AddNewsModal = ({openBooking,handleBookingClose,type}) => {
   
    
     const addNews = e =>{
-        fetch("https://news-portal-server-pi-three.vercel.app/news",{
+        fetch("https://news-portal-server.onrender.com/news",{
         method:"POST",
         headers:{
           "content-type":"application/json"

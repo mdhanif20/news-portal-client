@@ -14,7 +14,7 @@ const Home = () => {
     const [news,setNews]= useState([]);
 
     useEffect(()=>{
-        fetch("https://news-portal-server-pi-three.vercel.app/news")
+        fetch("https://news-portal-server.onrender.com/news")
         .then(res =>res.json())
         .then(data => setNews(data))
     },[])

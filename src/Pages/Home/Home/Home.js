@@ -14,7 +14,7 @@ const Home = () => {
     const [news,setNews]= useState([]);
 
     useEffect(()=>{
-        fetch("https://news-portal-server.onrender.com/news")
+        fetch("https://mynewsportal.investmentinsights360.com/news")
         .then(res =>res.json())
         .then(data => setNews(data))
     },[])

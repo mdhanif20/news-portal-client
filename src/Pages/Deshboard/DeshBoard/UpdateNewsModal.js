@@ -31,7 +31,7 @@ const UpdateNewsModal = ({openUpdateNewsModal,closeUpdateModal,id,news,type}) =>
   }
 
     const updatenewsData = id =>{
-            const url = `https://news-portal-server.onrender.com/news/${id}`;
+            const url = `https://mynewsportal.investmentinsights360.com/news/${id}`;
             fetch(url,{
                 method:"PUT",
                 headers:{

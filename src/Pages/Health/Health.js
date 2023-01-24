@@ -23,7 +23,7 @@ const Health = () => {
         handleBookingOpen()
     } 
     useEffect(()=>{
-        fetch("https://news-portal-server.onrender.com/news/health")
+        fetch("https://mynewsportal.investmentinsights360.com/news/health")
         .then(res =>res.json())
         .then(data => setNews(data))
     },[])

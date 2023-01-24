@@ -23,7 +23,7 @@ const BdNews = () => {
         handleBookingOpen()
     } 
     useEffect(()=>{
-        fetch("https://news-portal-server.onrender.com/news/business")
+        fetch("https://mynewsportal.investmentinsights360.com/news/business")
         .then(res =>res.json())
         .then(data => setNews(data))
     },[])

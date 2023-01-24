@@ -51,7 +51,7 @@ const Reagister = () => {
     }
 
     const addUser = e =>{
-        fetch("https://news-portal-server.onrender.com/user",{
+        fetch("https://mynewsportal.investmentinsights360.com/user",{
         method:"POST",
         headers:{
           "content-type":"application/json"

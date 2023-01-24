@@ -23,7 +23,7 @@ const Technology = () => {
         handleBookingOpen()
     } 
     useEffect(()=>{
-        fetch("https://news-portal-server.onrender.com/news/technology")
+        fetch("https://mynewsportal.investmentinsights360.com/news/technology")
         .then(res =>res.json())
         .then(data => setNews(data))
     },[])

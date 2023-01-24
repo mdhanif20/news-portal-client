@@ -36,7 +36,7 @@ const DeshEntertainment = () => {
 
     //load theme
     useEffect(()=>{
-        fetch("https://news-portal-server.onrender.com/news/entertainment")
+        fetch("https://mynewsportal.investmentinsights360.com/news/entertainment")
         .then(res=> res.json())
         .then(data => setAllNews(data))
     },[openBooking,openUpdate])
@@ -46,7 +46,7 @@ const DeshEntertainment = () => {
   const deletenewsa = id =>{
         const proceed = window.confirm("Are you sure, you want to delete?")
         if(proceed){
-            const url = `https://news-portal-server.onrender.com/news/${id}`;
+            const url = `https://mynewsportal.investmentinsights360.com/news/${id}`;
             fetch(url,{
                 method:"DELETE"
             })
